@@ -1,0 +1,111 @@
+<%- include('../partials/head') %>
+  <body class="bg-gray-900 text-white">
+    <%- include('../partials/header') %>
+    <div class="p-4 container mx-auto mt-10">
+      <h1 class="text-center text-3xl font-bold mb-6">
+        <%= editing ? "Edit" : "Register" %>
+         Your Home Here:
+      </h1>
+      <form
+        action="/host/<%= editing ? 'edit-home' : 'add-home' %>"
+        method="POST"
+        class="bg-gray-800 p-8 rounded-lg shadow-lg"
+      >
+        <div class="mb-6">
+          <label for="houseName" class="block text-sm font-medium text-gray-300 mb-2">House Name</label>
+          <input type="hidden" name="id" value="<%= editing ? home._id : '' %>" />
+          <input
+        type="text"
+        name="houseName"
+        value="<%= editing ? home.houseName : '' %>"
+        id="houseName"
+        class="w-full p-3 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+        placeholder="Enter the name of your house"
+        required
+          />
+        </div>
+        <div class="mb-6">
+          <label for="price" class="block text-sm font-medium text-gray-300 mb-2">Price per Night</label>
+          <input
+        type="number"
+        name="price"
+        value="<%= editing ? home.price : '' %>"
+        id="price"
+        class="w-full p-3 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+        placeholder="Enter price per night"
+        required
+          />
+        </div>
+        <div class="mb-6">
+          <label for="address" class="block text-sm font-medium text-gray-300 mb-2">Address</label>
+          <input
+        type="text"
+        name="address"
+        value="<%= editing ? home.address : '' %>"
+        id="address"
+        class="w-full p-3 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+        placeholder="Enter the Address"
+        required
+          />
+        </div>
+        <div class="mb-6">
+          <label for="rating" class="block text-sm font-medium text-gray-300 mb-2">Rating</label>
+          <input
+        type="number"
+        name="rating"
+        value="<%= editing ? home.rating: '' %>"
+        id="rating"
+        class="w-full p-3 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+        placeholder="Enter Rating"
+        required
+          />
+        </div>
+        <div class="mb-6">
+          <label for="photo" class="block text-sm font-medium text-gray-300 mb-2">Photo URL</label>
+          <input
+        type="text"
+        name="photo"
+        value="<%= editing ? home.photo: '' %>"
+        id="photo"
+        class="w-full p-3 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+        placeholder="Enter the URL of the image"
+        required
+          />
+        </div>
+        <div class="mb-6">
+          <label for="photo" class="block text-sm font-medium text-gray-300 mb-2">Description</label>
+          <textarea
+        name="description"
+       
+        id="description"
+        class="w-full p-3 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+        placeholder="Description your Home"
+        required
+          ><%= editing ? home.description: '' %></textarea>
+        </div>
+        <div class="text-center">
+          <input
+        type="submit"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer"
+        value="Submit"
+          />
+        </div>
+      </form>
+      <div class="mt-6 text-center">
+        <a
+          href="/"
+          class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded"
+        >
+          Back to Home
+        </a>
+      </div>
+      <div class="mt-6 text-center">
+        <img
+          src="https://media.istockphoto.com/id/1436217023/photo/exterior-of-a-blue-suburban-home.jpg?s=612x612&w=0&k=20&c=6n08rcEdza9Vehf5cHzk1uS0UKAN0qr3o884mbDvD5o="
+          alt="House Image"
+          class="mx-auto rounded-lg shadow-lg"
+        />
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!-- Navbar -->
+<nav class="bg-gray-800 p-4 shadow-lg">
+  <div class="container mx-auto flex justify-between items-center">
+    <a href="/" class="animate-bounce text-2xl font-bold text-white">
+      <span class="text-2xl font-bold text-white">Airbnb</span></a
+    >
+    <button class="text-white block md:hidden" id="nav-toggle">
+      <svg
+        class="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16m-7 6h7"
+        ></path>
+      </svg>
+    </button>
+    <div class="hidden md:flex md:items-center" id="nav-content">
+      <a href="/homes" class="text-gray-300 hover:text-white mx-4">Home</a>
+      <a href="/host/host-home-list" class="text-gray-300 hover:text-white mx-4"
+        >Host Home</a
+      >
+      <a href="/host/add-home" class="text-gray-300 hover:text-white mx-4"
+        >Add Home</a
+      >
+      <a href="/booking" class="text-gray-300 hover:text-white mx-4">Booking</a>
+      <a href="/favourite" class="text-gray-300 hover:text-white mx-4"
+        >Favourites</a
+      >
+    </div>
+  </div>
+</nav>
+<!-- End of Navbar -->
+
+<!-- Sidebar for mobile -->
+<div
+  class="fixed inset-0 bg-gray-800 bg-opacity-75 z-50 hidden"
+  id="mobile-nav"
+>
+  <div class="fixed inset-y-0 left-0 w-64 bg-gray-900 p-4">
+    <a href="/" class="animate-bounce text-2xl py-4 text-white">
+      <span class="text-2xl font-bold text-white">Airbnb</span></a
+    >
+    <a href="/homes" class="block text-gray-300 hover:text-white py-2">Home</a>
+    <a
+      href="/host/host-home-list"
+      class="block text-gray-300 hover:text-white py-2"
+      >Host Home</a
+    >
+    <a href="/host/add-home" class="block text-gray-300 hover:text-white py-2"
+      >Add Home</a
+    >
+    <a href="/booking" class="block text-gray-300 hover:text-white py-2"
+      >Booking</a
+    >
+    <a href="/favourite" class="block text-gray-300 hover:text-white py-2"
+      >Favourites</a
+    >
+  </div>
+</div>
+
+<script>
+  document.getElementById("nav-toggle").addEventListener("click", function () {
+    var mobileNav = document.getElementById("mobile-nav");
+    if (mobileNav.classList.contains("hidden")) {
+      mobileNav.classList.remove("hidden");
+    } else {
+      mobileNav.classList.add("hidden");
+    }
+  });
+</script>

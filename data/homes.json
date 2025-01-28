@@ -1,0 +1,90 @@
+[
+  {
+    "houseName": "Utsav",
+    "price": "210",
+    "rating": "3",
+    "address": " Bharat Takies Bhopal",
+    "photo": "https://tse4.mm.bing.net/th?id=OIP.FhPpaqHJKhXioY7oRrAo-QHaEW&w=278&h=278&c=7",
+    "id": "1"
+  },
+  {
+    "id": "2",
+    "houseName": "Home 2",
+    "price": "500",
+    "rating": "9",
+    "address": "Seoul, South Korea",
+    "photo": "https://tse4.mm.bing.net/th?id=OIP.FhPpaqHJKhXioY7oRrAo-QHaEW&w=278&h=278&c=7"
+  },
+  {
+    "id": "3",
+    "houseName": "Kurukshetra",
+    "price": "500",
+    "rating": "9",
+    "address": "Seoul, South Korea",
+    "photo": "https://tse4.mm.bing.net/th?id=OIP.JARKErVYR9yi1laRSrMwGAHaHF&w=453&h=453&c=7"
+  },
+  {
+    "id": "5",
+    "houseName": "Serenity Villa",
+    "price": "700",
+    "rating": "8",
+    "address": "Goa, India",
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnhI2mLbUNWbPbnA0HUoKr9Y6Czsq6NUMQ8g&s"
+  },
+  {
+    "id": "6",
+    "houseName": "Mountain Retreat",
+    "price": "650",
+    "rating": "10",
+    "address": "Shimla, India",
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0QVDXXGuA4fN3eGHoTeXLxqB_NMQ-YXhikA&s"
+  },
+  {
+    "id": "7",
+    "houseName": "Urban Loft",
+    "price": "850",
+    "rating": "9",
+    "address": "New York, USA",
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKlonxhlqcxv9A8JsqqMZLgGobK92BcsXhzg&s"
+  },
+  {
+    "id": "8",
+    "houseName": "Beachside Bungalow",
+    "price": "400",
+    "rating": "7",
+    "address": "Miami, USA",
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQOgKDUA1-GYUkchRAbvel4ahLgpnZg8pEgA&s"
+  },
+  {
+    "houseName": "Summer Home",
+    "price": "200",
+    "rating": "8",
+    "address": "alibag , MP , INDIA",
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5ePu4sW6Vxt7JX93Z64vBZS-emnkzsdMTaQ&s",
+    "id": "0.7358374190830619"
+  },
+  {
+    "houseName": "Shalimar",
+    "price": "200",
+    "rating": "5",
+    "address": "Bhopal station",
+    "photo": "https://149345965.v2.pressablecdn.com/wp-content/uploads/img-hotels-IADGV_006-Dusk-Exterior-home.jpg",
+    "id": "0.9416734601014851"
+  },
+  {
+    "id": "4",
+    "houseName": "Mecca",
+    "price": "300",
+    "rating": "9",
+    "address": "Saudi Arabia",
+    "photo": "https://tse2.mm.bing.net/th?id=OIP.kkozAHF_Re_B8w1GuMxLEgHaE7&w=315&h=315&c=7"
+  },
+  {
+    "houseName": "Stay Palace",
+    "price": "499",
+    "rating": "7",
+    "address": "Washinton DC",
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZxvqFvjfWEpdvRWKYsZJWHQIpin5j1fxNqA&s",
+    "id": "0.7510336104302124"
+  }
+]

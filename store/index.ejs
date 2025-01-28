@@ -1,0 +1,31 @@
+<%- include('../partials/head') %>
+<body class="bg-gray-900 text-white">
+  <%- include('../partials/header') %>
+  <%- include('../partials/panel') %>
+  <div class="container items-center mx-auto text-center mt-10">
+    <h2 class="mt-5"></h2>
+    <a href="/host/add-home" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-block">Add Home</a>
+  </div>
+  <div class="container mx-auto text-center mt-10">
+    <h2 class="text-2xl font-semibold mb-5 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-transparent bg-clip-text animate-pulse">Welcome to Airbnb Index Page</h2>
+    <!-- Change to grid layout -->
+    <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <% homes.forEach(home => { %>
+      <li class="bg-gray-800 p-4 mx-4 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:bg-gray-700">
+        <img src="<%= home.photo %>" alt="<%= home.houseName %>" class="w-full h-48 object-cover rounded-t-lg">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold"><%= home.houseName %></h3>
+          <p class="text-gray-400"><%= home.address %></p>
+          <p class="text-gray-300 mt-2"><%= home.description %></p>
+          <p class="text-gray-300 mt-2">Price: $<%= home.price %></p>
+          <p class="text-yellow-400 mt-2">Rating: <%= home.rating %> / 10</p>
+        </div>
+        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Book</button>
+      </li>
+      <% }) %>
+    </ul>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<%- include('../partials/head') %>
+<body class="bg-gray-900 text-white">
+  <%- include('../partials/header') %>
+  <div class="container items-center mx-auto text-center mt-10">
+    <h2 class="text-4xl font-bold text-blue-400 mb-4">Home Details Page</h2>
+    <p class="text-lg text-gray-400 mb-6">
+      Welcome to the home details page. Here you will find all the information
+      about the selected home.
+    </p>
+    <p class="text-lg text-gray-400 mb-6"><%= home.houseName %></p>
+
+    <!-- <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"> -->
+    <div
+      class="flex flex-col md:flex-row p-4 mx-4 bg-gray-800 rounded-lg shadow-lg"
+    >
+      <div class="md:w-1/2 flex justify-center items-center">
+        <img
+          src="<%= home.photo || 'default-photo.jpg' %>"
+          alt="<%= home.houseName || 'Default House Name' %>"
+          class="w-full h-auto max-h-96 object-cover rounded-lg"
+        />
+      </div>
+      <div class="md:w-1/2 p-4 space-y-4">
+        <h3 class="text-2xl font-semibold mb-2 text-blue-400">
+          <%= home.houseName %>
+        </h3>
+        <p class="text-gray-400 mb-2">
+          <i class="fas fa-map-marker-alt"> <%= home.address %></i>
+        </p>
+        <p class="text-gray-300 mb-4"><%= home.description %></p>
+        <ul class="space-y-2">
+          <li class="text-gray-300">
+            Price: <span class="text-green-400">$<%= home.price %></span>
+          </li>
+          <li class="text-yellow-400">Rating: <%= home.rating %> / 10</li>
+        </ul>
+        <button
+          class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-500 hover:to-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105"
+        >
+          Book Now
+        </button>
+        <%- include('../partials/favourites') %>
+      </div>
+    </div>
+  </div>
+</body>
