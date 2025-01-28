@@ -2,10 +2,6 @@
 
 This project is part of the Node Course and focuses on integrating MongoDB with an Airbnb-like application.
 
-## Developer
-
-Mohammad Zaid Khan
-
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -14,6 +10,8 @@ Mohammad Zaid Khan
 - [Features](#features)
 - [Technologies](#technologies)
 - [Database Schema](#database-schema)
+- [Screenshot](#screenshot)
+- [Mobile Screenshot](#mobile-screenshots)
 
 ## Introduction
 
@@ -131,3 +129,16 @@ Here are the screenshots of the project in action:
 ![Project Screenshot](./img/add-home.png)
 ![Project Screenshot](./img/fav.png)
 ![Project Screenshot](./img/fav2.png)
+
+## Mobile Screenshots
+
+Here are the screenshots of the project on mobile devices:
+
+![Mobile Screenshot](./img/mob1.png)
+![Mobile Screenshot](./img/mob2.png)
+
+## Developer
+
+**Mohammad Zaid Khan**
+
+You can reach out to me via [LinkedIn](https://www.linkedin.com/in/mohammadzaidkhan) or [GitHub](https://github.com/64bitAtomic).
