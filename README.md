@@ -141,4 +141,4 @@ Here are the screenshots of the project on mobile devices:
 
 **Mohammad Zaid Khan**
 
-You can reach out to me via [LinkedIn](https://www.linkedin.com/in/mohammadzaidkhan) or [GitHub](https://github.com/64bitAtomic).
+You can reach out to me via [LinkedIn](https://www.linkedin.com/in/mohammad-zaid-khan-020199260/) or [GitHub](https://github.com/64bitAtomic).
